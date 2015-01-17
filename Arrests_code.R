@@ -13,7 +13,7 @@ library( foreign )
 library( ggplot2 )
 library( Hmisc )
 
-Arrests <- read.csv("/Arrests.csv" )
+Arrests <- read.csv("Arrests.csv" )
 
 
 # Tests correlation between arrest rate and black population share.
@@ -31,8 +31,9 @@ rcorr( Arrests$Pre_arrest_rate, Arrests$Black_share, type = c( "spearman" ) )
 # Ordinary Least Squares estimation.
 
 ggplot( Arrests, aes( x = Pre_arrest_rate , y = Black_share ) ) +
-  geom_point( shape = 1, size = 3, color = "#666667" ) +
-  geom_smooth( method = "lm", se = FALSE, size = 2, color = "#22aae9" ) +
+  geom_point( shape = 1, size = 2, color = "#666667" ) +
+  geom_smooth( method = "lm", se = FALSE, size = 1, color = "#22aae9" ) +
+  ylim(0, 1) +
   labs( title = "Relationship between arrest rate and race in Chicago communities") +
   xlab( "Marijuana arrests per 100,000 residents" ) +
   ylab( "Share of population that is black" ) +
