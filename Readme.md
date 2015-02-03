@@ -1,1 +1,1 @@
-Data and code for Chicago Sun-Times <a href="http://chicago.suntimes.com/?p=165433">story</a> on racial disparities in Chicago marijuana arrests.
+Data and code for Chicago Sun-Times <a href="http://chicago.suntimes.com/chicago-politics/7/71/165433/analysis-disparities-in-pot-arrests-reveal-two-chicagos">story</a> on racial disparities in Chicago marijuana arrests.
